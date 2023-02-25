@@ -1,3 +1,4 @@
+# Code for Self Replication in Ruby
 def replicate
   File.open(__FILE__, "w") do |f|
     f.puts self.to_s
@@ -6,8 +7,10 @@ end
 
 replicate
 
-#include <fstream>
-#include <string>
+# Code for Replication in C++
+
+include <fstream>
+include <string>
 
 int main() {
   std::ifstream source_file(__FILE__);
@@ -21,16 +24,17 @@ int main() {
   return 0;
 }
 
-
-# require the 'curses' library to access curses functionality
+# Code for Flashing the Screen in Ruby
+  
+require the 'curses' library to access curses functionality
 require 'cursed'
 
-# set up curses and the screen
+##set up curses and the screen
 Cursed.start do
   Cursed.init_screen
   Cursed.curs_set(0) # hide the cursor
 
-  # infinite loop to flash the screen
+  ##infinite loop to flash the screen
   loop do
     Cursed.attrset(Cursed::A_STANDOUT) # set the screen to standout mode
     Cursed.addstr("Flashing screen!") # write to the screen
@@ -44,9 +48,9 @@ Cursed.start do
   end
 end
 
-
-#include <curses.h> // include the curses library
-#include <unistd.h> // for the sleep function
+#Code in C++
+include <curses.h> // include the curses library
+include <unistd.h> // for the sleep function
 
 int main() {
   // set up curses and the screen
