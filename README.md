@@ -4,9 +4,9 @@ Only intended for Educational Use
 This repository contains code that shows the framework for various Malwares, and simple Trojans
 
 # Virus Functionality Repository
-This repository contains code and commands for various functionalities of a virus. These functionalities are for educational purposes only, and should not be used for any malicious purposes.
+This repository contains code and commands for various functionalities of a virus. These functionalities are for educational purposes only, and should not be used for any malicious purposes. The `.md` files includes the structures in different programming languages
 
-# DIsclaimer
+# Disclaimer
 The author of this repository is not responsible for any damage or harm caused by the use of this code or commands. Use at your own risk.
 
 # Viruses using Python
