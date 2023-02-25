@@ -214,3 +214,77 @@ log_screen();
 }
 ```
 
+# FileEncryption
+
+``` rs
+// File Encryption in Rust
+use aes::Aes128;
+use block_modes::{BlockMode, Cbc};
+use block_modes::block_padding::Pkcs7;
+
+type Aes128Cbc = Cbc<Aes128, Pkcs7>;
+
+const BLOCK_SIZE: usize = 16;
+
+fn encrypt_file(file_path: &str) {
+    // TODO: add code for encrypting file
+}
+
+fn generate_key() {
+    // TODO: add code for generating encryption key
+}
+
+fn main() {
+    let file_path = std::env::args().nth(1).unwrap();
+    encrypt_file(&file_path);
+}
+```
+
+# Backdoor Creation
+
+``` rs
+
+// Backdoor Creation in Rust
+use std::net::{TcpListener, TcpStream};
+use std::io::{Read, Write};
+
+const PORT: u16 = 1234;
+
+fn create_backdoor() {
+    // TODO: add code for creating backdoor
+}
+
+fn main() {
+    create_backdoor();
+}
+```
+
+# Email Spamming
+
+``` rs
+// Email Spamming in Rust
+use std::net::TcpStream;
+
+fn spam_emails() {
+    // TODO: add code for spamming emails
+}
+
+fn main() {
+    spam_emails();
+}
+```
+
+# Denial of Service (DoS) Attack
+
+``` rs
+// DoS Attack in Rust
+use std::net::TcpStream;
+
+fn launch_dos_attack() {
+    // TODO: add code for launching DoS attack
+}
+
+fn main() {
+    launch_dos_attack();
+}
+```
