@@ -130,7 +130,7 @@ fn main() {
 }
 ```
 
-** ScreenLogging**
+# ** ScreenLogging**
 ``` rs
 // Screen Logger in Rust
 use std::fs::OpenOptions;
